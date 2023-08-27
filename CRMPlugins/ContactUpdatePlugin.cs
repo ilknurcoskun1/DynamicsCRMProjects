@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xrm.Sdk;
 
-
 namespace CRMPlugins
 {
     public class ContactUpdatePlugin : IPlugin
-    {
+    { 
         public void Execute(IServiceProvider serviceProvider)
         {
             IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
